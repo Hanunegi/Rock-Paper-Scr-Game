@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and borders are included in width and height */
+}
+
+body {
+    background-image: url('./dmn.jpeg'); /* Make sure the path to your image is correct */
+    background-size: cover; /* Ensure the image covers the entire background */
+    font-family: Arial, sans-serif; /* Added a default font for better appearance */
+    text-align: center; /* Center-align text by default */
+}
+
+h1 {
+    color: white;
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.choice {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+     background-color: yellow;/* Added a background color for better visibility */
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+img {
+    height: 190px;
+    width: 190px;
+    object-fit: cover;
+    border-radius: 50%; /* Keeps the images circular */
+    border: none; /* Ensures no border is applied */
+    margin: 0; /* Removes any default margin */
+    padding: 0; /* Removes any default padding */
+}
+
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.scoreboard {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    gap: 2rem;
+    background-color: rgb(18, 222, 52);
+    color: white;
+    padding: 1rem; /* Added padding to ensure the content is not too close to edges */
+    border-radius: 10px; /* Changed to a more standard border radius */
+}
+
+.msgcontainer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    gap: 5rem;
+    background-color: rgb(8, 8, 7);
+    color: orange;
+    height: 3rem;
+    margin: 1rem auto; /* Center the container horizontally */
+    border-radius: 10px; /* Changed to a more standard border radius */
+    padding: 0.5rem; /* Added padding for better spacing */
+}
+
+#yourscore, #compscore {
+    font-size: 3rem;
+    text-align: center;
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
